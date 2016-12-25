@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainWindowController">
+   <children>
+      <Label fx:id="labelText" alignment="CENTER_RIGHT" layoutX="23.0" layoutY="14.0" prefHeight="76.0" prefWidth="235.0" style="-fx-border-style: solid; -fx-background-color: lightblue; -fx-border-width: 1;" text="0" AnchorPane.bottomAnchor="224.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets right="10.0" />
+         </padding>
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="18.0" layoutY="150.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button id="ac-button" mnemonicParsing="false" onAction="#buttonAcPressed" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #8B0000;" text="AC" textFill="WHITE" />
+            <Button id="operation-button" mnemonicParsing="false" onAction="#buttonDivisionPressed" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #DAA520;" text="/" GridPane.columnIndex="3" />
+            <Button mnemonicParsing="false" onAction="#buttonSevenPressed" prefHeight="50.0" prefWidth="60.0" text="7" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#buttonEightPressed" prefHeight="50.0" prefWidth="60.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#buttonNinePressed" prefHeight="50.0" prefWidth="60.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button id="operation-button" mnemonicParsing="false" onAction="#buttonMultyplyPressed" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #DAA520;" text="X" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Button mnemonicParsing="false" onAction="#buttonFourPressed" prefHeight="50.0" prefWidth="60.0" text="4" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#buttonFivePressed" prefHeight="50.0" prefWidth="60.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#buttonSixPressed" prefHeight="50.0" prefWidth="60.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button id="operation-button" mnemonicParsing="false" onAction="#buttonSubtractionPressed" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #DAA520;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button mnemonicParsing="false" onAction="#buttonOnePressed" prefHeight="50.0" prefWidth="60.0" text="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#buttonTwoPressed" prefHeight="50.0" prefWidth="60.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#buttonThreePressed" prefHeight="50.0" prefWidth="60.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button id="operation-button" mnemonicParsing="false" onAction="#buttonAdditionPressed" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #DAA520;" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Button mnemonicParsing="false" onAction="#buttonZeroPressed" prefHeight="50.0" prefWidth="120.0" text="0" GridPane.columnSpan="2" GridPane.rowIndex="4" />
+            <Button id="operation-button" mnemonicParsing="false" onAction="#buttonComaPressed" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #DAA520;" text="," GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button id="operation-button" mnemonicParsing="false" onAction="#buttonEqualsPressed" prefHeight="50.0" prefWidth="60.0" style="-fx-background-color: #DAA520;" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <ImageView fitHeight="48.0" fitWidth="104.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.columnSpan="4">
+               <image>
+                  <Image url="@../../vv.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
